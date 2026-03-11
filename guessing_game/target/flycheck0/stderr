@@ -1,0 +1,464 @@
+   0.012215378s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/home/lukes/projects/hello_world/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint error for guessing_game v0.1.0 (/home/lukes/projects/hello_world/guessing_game)/Check { test: false }/TargetInner { name: "guessing_game", doc: true, ..: with_path("/home/lukes/projects/hello_world/guessing_game/src/main.rs", Edition2024) }
+   0.012230629s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/home/lukes/projects/hello_world/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/lukes/projects/hello_world/guessing_game/target/debug/.fingerprint/guessing_game-341cbf2bf8493911/bin-guessing_game`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+  25: __libc_start_main_alias_1
+  26: <unknown>
+   0.020242370s  INFO prepare_target{force=false package_id=rand v0.8.5 target="rand"}: cargo::core::compiler::fingerprint: fingerprint error for rand v0.8.5/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand", ["lib"], "/home/lukes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand-0.8.5/src/lib.rs", Edition2018) }
+   0.020251090s  INFO prepare_target{force=false package_id=rand v0.8.5 target="rand"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/lukes/projects/hello_world/guessing_game/target/debug/.fingerprint/rand-6083b8d3bb03588f/lib-rand`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  17: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  18: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  21: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  22: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+  26: __libc_start_main_alias_1
+  27: <unknown>
+   0.020397755s  INFO prepare_target{force=false package_id=libc v0.2.182 target="libc"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.182/Check { test: false }/TargetInner { ..: lib_target("libc", ["lib"], "/home/lukes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.182/src/lib.rs", Edition2021) }
+   0.020403085s  INFO prepare_target{force=false package_id=libc v0.2.182 target="libc"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/lukes/projects/hello_world/guessing_game/target/debug/.fingerprint/libc-70adceb4428e73ad/lib-libc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  18: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  19: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  22: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  23: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+  27: __libc_start_main_alias_1
+  28: <unknown>
+   0.020640053s  INFO prepare_target{force=false package_id=rand_chacha v0.3.1 target="rand_chacha"}: cargo::core::compiler::fingerprint: fingerprint error for rand_chacha v0.3.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand_chacha", ["lib"], "/home/lukes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand_chacha-0.3.1/src/lib.rs", Edition2018) }
+   0.020646073s  INFO prepare_target{force=false package_id=rand_chacha v0.3.1 target="rand_chacha"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/lukes/projects/hello_world/guessing_game/target/debug/.fingerprint/rand_chacha-b4e181f2d3f0859d/lib-rand_chacha`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  18: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  19: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  22: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  23: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+  27: __libc_start_main_alias_1
+  28: <unknown>
+   0.020793328s  INFO prepare_target{force=false package_id=ppv-lite86 v0.2.21 target="ppv_lite86"}: cargo::core::compiler::fingerprint: fingerprint error for ppv-lite86 v0.2.21/Check { test: false }/TargetInner { ..: lib_target("ppv_lite86", ["lib"], "/home/lukes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ppv-lite86-0.2.21/src/lib.rs", Edition2021) }
+   0.020798898s  INFO prepare_target{force=false package_id=ppv-lite86 v0.2.21 target="ppv_lite86"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/lukes/projects/hello_world/guessing_game/target/debug/.fingerprint/ppv-lite86-61a738f67900f5dd/lib-ppv_lite86`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  18: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  19: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  20: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  21: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  22: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  23: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  24: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  25: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  26: main
+  27: __libc_start_call_main
+  28: __libc_start_main_alias_1
+  29: <unknown>
+   0.020941433s  INFO prepare_target{force=false package_id=zerocopy v0.8.40 target="zerocopy"}: cargo::core::compiler::fingerprint: fingerprint error for zerocopy v0.8.40/Check { test: false }/TargetInner { ..: lib_target("zerocopy", ["lib"], "/home/lukes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.8.40/src/lib.rs", Edition2021) }
+   0.020947233s  INFO prepare_target{force=false package_id=zerocopy v0.8.40 target="zerocopy"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/lukes/projects/hello_world/guessing_game/target/debug/.fingerprint/zerocopy-952f9301effd10d3/lib-zerocopy`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  23: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  24: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  25: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  26: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  27: main
+  28: __libc_start_call_main
+  29: __libc_start_main_alias_1
+  30: <unknown>
+   0.021187231s  INFO prepare_target{force=false package_id=rand_core v0.6.4 target="rand_core"}: cargo::core::compiler::fingerprint: fingerprint error for rand_core v0.6.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rand_core", ["lib"], "/home/lukes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand_core-0.6.4/src/lib.rs", Edition2018) }
+   0.021193361s  INFO prepare_target{force=false package_id=rand_core v0.6.4 target="rand_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/lukes/projects/hello_world/guessing_game/target/debug/.fingerprint/rand_core-e349800b2cd31878/lib-rand_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  18: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  19: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  20: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  21: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  22: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  23: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  24: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  25: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  26: main
+  27: __libc_start_call_main
+  28: __libc_start_main_alias_1
+  29: <unknown>
+   0.021326015s  INFO prepare_target{force=false package_id=getrandom v0.2.17 target="getrandom"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.2.17/Check { test: false }/TargetInner { ..: lib_target("getrandom", ["lib"], "/home/lukes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.17/src/lib.rs", Edition2018) }
+   0.021333685s  INFO prepare_target{force=false package_id=getrandom v0.2.17 target="getrandom"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/lukes/projects/hello_world/guessing_game/target/debug/.fingerprint/getrandom-4b7913e74d22fc4f/lib-getrandom`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  23: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  24: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  25: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  26: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  27: main
+  28: __libc_start_call_main
+  29: __libc_start_main_alias_1
+  30: <unknown>
+   0.021476770s  INFO prepare_target{force=false package_id=cfg-if v1.0.4 target="cfg_if"}: cargo::core::compiler::fingerprint: fingerprint error for cfg-if v1.0.4/Check { test: false }/TargetInner { ..: lib_target("cfg_if", ["lib"], "/home/lukes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cfg-if-1.0.4/src/lib.rs", Edition2018) }
+   0.021481840s  INFO prepare_target{force=false package_id=cfg-if v1.0.4 target="cfg_if"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/lukes/projects/hello_world/guessing_game/target/debug/.fingerprint/cfg-if-b8c685c3ec20d4c2/lib-cfg_if`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  21: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  22: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  24: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  25: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  26: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  27: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  28: main
+  29: __libc_start_call_main
+  30: __libc_start_main_alias_1
+  31: <unknown>
+   0.021612385s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/home/lukes/projects/hello_world/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint error for guessing_game v0.1.0 (/home/lukes/projects/hello_world/guessing_game)/Check { test: true }/TargetInner { name: "guessing_game", doc: true, ..: with_path("/home/lukes/projects/hello_world/guessing_game/src/main.rs", Edition2024) }
+   0.021618325s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/home/lukes/projects/hello_world/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/lukes/projects/hello_world/guessing_game/target/debug/.fingerprint/guessing_game-ce09567a38b0852d/test-bin-guessing_game`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+  25: __libc_start_main_alias_1
+  26: <unknown>
+    Checking libc v0.2.182
+    Checking cfg-if v1.0.4
+    Checking zerocopy v0.8.40
+    Checking getrandom v0.2.17
+    Checking rand_core v0.6.4
+    Checking ppv-lite86 v0.2.21
+    Checking rand_chacha v0.3.1
+    Checking rand v0.8.5
+    Checking guessing_game v0.1.0 (/home/lukes/projects/hello_world/guessing_game)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.23s
